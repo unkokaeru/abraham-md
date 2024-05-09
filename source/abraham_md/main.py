@@ -1,7 +1,7 @@
 """main.py: Called when the package is run as a script."""
 
 from .config.dialogue import Dialogue
-from .interface.command_line import intro_text, fetch_input_path
+from .interface.command_line import fetch_input_path, intro_text
 from .logs.setup_logging import setup_logging
 
 main_logger = setup_logging()
