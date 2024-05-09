@@ -15,7 +15,32 @@ class Dialogue:
     """
 
     # Text
-    INTRO_TEXT = "Welcome to Abraham!"
+    INTRO_TEXT = """Welcome to Abraham!
+Please ensure the input directory contains the correct directory structure, for example:
+
+MTH1003 Ideas of Mathematical Proof
+├── handbook
+│   └── Module Specification.pdf
+├── lectures
+│   ├── 1.pdf
+│   ├── 2.pdf
+│   ├── 3.pdf
+│   └── ...
+├── papers
+│   ├── 2021.pdf
+│   ├── 2022.pdf
+│   └── MOCK1.pdf
+├── practicals
+│   ├── 1.pdf
+│   ├── 2.pdf
+│   ├── 3.pdf
+│   └── ...
+└── tutorials
+    ├── 1.pdf
+    ├── 2.pdf
+    ├── 3.pdf
+    └── ...
+"""
     EXIT_TEXT = "Exiting Abraham..."
     SETUP_TEXT = """Please enter the input directory path:"""
 
