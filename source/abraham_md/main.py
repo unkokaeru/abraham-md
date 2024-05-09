@@ -1,8 +1,10 @@
 """main.py: Called when the package is run as a script."""
 
+from .config.constants import Constants
 from .config.dialogue import Dialogue
 from .interface.command_line import fetch_input_path, intro_text
 from .logs.setup_logging import setup_logging
+from .processing.file_conversion import list_files, pdf_to_markdown, process_files
 
 main_logger = setup_logging()
 
@@ -12,6 +14,7 @@ TEMPORARY RAMBLINGS:
 
 TODO: PROJECT FLOW
 PDF -> MD -> Abstraction -> Elaboration -> MD (-> APKG, PDF)
+Done: PDF -> MD
 
 TODO: FETCH REQUIRED DATA
 module name
@@ -47,7 +50,8 @@ def main() -> None:
     try:
         intro_text()
         input_path = fetch_input_path()
-        print(input_path)
+        file_list = list_files(input_path, Constants.TO_CONVERT_EXTENSION)
+        process_files(pdf_to_markdown, file_list)
     except KeyboardInterrupt:
         print("\n")
         main_logger.info(Dialogue.EXIT_TEXT)
