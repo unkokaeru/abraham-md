@@ -72,6 +72,78 @@ separating words.</p>
 </dd></dl>
 
 </section>
+<section id="module-abraham_md.config.dialogue">
+<span id="abraham-md-config-dialogue-module"></span><h2>abraham_md.config.dialogue module<a class="headerlink" href="#module-abraham_md.config.dialogue" title="Link to this heading">¶</a></h2>
+<p>dialogue.py: Dialogue for the application.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="abraham_md.config.dialogue.Dialogue">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">abraham_md.config.dialogue.</span></span><span class="sig-name descname"><span class="pre">Dialogue</span></span><a class="headerlink" href="#abraham_md.config.dialogue.Dialogue" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Dialogue for the application.</p>
+<p class="rubric">Notes</p>
+<p>This class contains dialogue used throughout the application.
+By storing dialogue in a single location, it is easier to
+manage and update it. Dialogue should be defined as class
+attributes and should be named in uppercase with underscores
+separating words.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abraham_md.config.dialogue.Dialogue.DIRECTORY_NAMING_ERROR">
+<span class="sig-name descname"><span class="pre">DIRECTORY_NAMING_ERROR</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'Invalid</span> <span class="pre">directory</span> <span class="pre">name:</span> <span class="pre">{}'</span></em><a class="headerlink" href="#abraham_md.config.dialogue.Dialogue.DIRECTORY_NAMING_ERROR" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abraham_md.config.dialogue.Dialogue.EXIT_TEXT">
+<span class="sig-name descname"><span class="pre">EXIT_TEXT</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'Exiting</span> <span class="pre">Abraham...'</span></em><a class="headerlink" href="#abraham_md.config.dialogue.Dialogue.EXIT_TEXT" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abraham_md.config.dialogue.Dialogue.INTRO_TEXT">
+<span class="sig-name descname"><span class="pre">INTRO_TEXT</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'Welcome</span> <span class="pre">to</span> <span class="pre">Abraham!'</span></em><a class="headerlink" href="#abraham_md.config.dialogue.Dialogue.INTRO_TEXT" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abraham_md.config.dialogue.Dialogue.INVALID_PATH_ERROR">
+<span class="sig-name descname"><span class="pre">INVALID_PATH_ERROR</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'Invalid</span> <span class="pre">path.</span> <span class="pre">Please</span> <span class="pre">try</span> <span class="pre">again.'</span></em><a class="headerlink" href="#abraham_md.config.dialogue.Dialogue.INVALID_PATH_ERROR" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abraham_md.config.dialogue.Dialogue.INVALID_STRUCTURE_ERROR">
+<span class="sig-name descname"><span class="pre">INVALID_STRUCTURE_ERROR</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'Invalid</span> <span class="pre">directory</span> <span class="pre">structure.</span> <span class="pre">Please</span> <span class="pre">try</span> <span class="pre">again.'</span></em><a class="headerlink" href="#abraham_md.config.dialogue.Dialogue.INVALID_STRUCTURE_ERROR" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abraham_md.config.dialogue.Dialogue.MESSY_DIRECTORY_ERROR">
+<span class="sig-name descname"><span class="pre">MESSY_DIRECTORY_ERROR</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'Messy</span> <span class="pre">directory:</span> <span class="pre">{}.</span> <span class="pre">Please</span> <span class="pre">ensure</span> <span class="pre">all</span> <span class="pre">files</span> <span class="pre">are</span> <span class="pre">in</span> <span class="pre">the</span> <span class="pre">correct</span> <span class="pre">directories.'</span></em><a class="headerlink" href="#abraham_md.config.dialogue.Dialogue.MESSY_DIRECTORY_ERROR" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abraham_md.config.dialogue.Dialogue.MISSING_DIRECTORY_ERROR">
+<span class="sig-name descname"><span class="pre">MISSING_DIRECTORY_ERROR</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'Missing</span> <span class="pre">directory:</span> <span class="pre">{}'</span></em><a class="headerlink" href="#abraham_md.config.dialogue.Dialogue.MISSING_DIRECTORY_ERROR" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abraham_md.config.dialogue.Dialogue.MISSING_FILE_ERROR">
+<span class="sig-name descname"><span class="pre">MISSING_FILE_ERROR</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'Missing</span> <span class="pre">file:</span> <span class="pre">{}'</span></em><a class="headerlink" href="#abraham_md.config.dialogue.Dialogue.MISSING_FILE_ERROR" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abraham_md.config.dialogue.Dialogue.PROCEED_TEXT">
+<span class="sig-name descname"><span class="pre">PROCEED_TEXT</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'Would</span> <span class="pre">you</span> <span class="pre">like</span> <span class="pre">to</span> <span class="pre">proceed</span> <span class="pre">anyway?</span> <span class="pre">[y/n]:'</span></em><a class="headerlink" href="#abraham_md.config.dialogue.Dialogue.PROCEED_TEXT" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abraham_md.config.dialogue.Dialogue.SETUP_TEXT">
+<span class="sig-name descname"><span class="pre">SETUP_TEXT</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'Please</span> <span class="pre">enter</span> <span class="pre">the</span> <span class="pre">input</span> <span class="pre">directory</span> <span class="pre">path:'</span></em><a class="headerlink" href="#abraham_md.config.dialogue.Dialogue.SETUP_TEXT" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abraham_md.config.dialogue.Dialogue.VALID_PATH_MESSAGE">
+<span class="sig-name descname"><span class="pre">VALID_PATH_MESSAGE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'Valid</span> <span class="pre">path.'</span></em><a class="headerlink" href="#abraham_md.config.dialogue.Dialogue.VALID_PATH_MESSAGE" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
 <section id="module-abraham_md.config.paths">
 <span id="abraham-md-config-paths-module"></span><h2>abraham_md.config.paths module<a class="headerlink" href="#module-abraham_md.config.paths" title="Link to this heading">¶</a></h2>
 <p>paths.py: Contains paths for the application.</p>
@@ -87,12 +159,12 @@ Paths should be defined as class attributes and should be named in uppercase
 with underscores separating words.</p>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abraham_md.config.paths.Paths.TEMPLATES_PATH">
-<span class="sig-name descname"><span class="pre">TEMPLATES_PATH</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">PosixPath('/tmp/tmp8azwgjnr')</span></em><a class="headerlink" href="#abraham_md.config.paths.Paths.TEMPLATES_PATH" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">TEMPLATES_PATH</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">PosixPath('/tmp/tmpfyfwwd97')</span></em><a class="headerlink" href="#abraham_md.config.paths.Paths.TEMPLATES_PATH" title="Link to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abraham_md.config.paths.Paths.temp_dir">
-<span class="sig-name descname"><span class="pre">temp_dir</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">PosixPath('/tmp/tmp8azwgjnr')</span></em><a class="headerlink" href="#abraham_md.config.paths.Paths.temp_dir" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">temp_dir</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">PosixPath('/tmp/tmpfyfwwd97')</span></em><a class="headerlink" href="#abraham_md.config.paths.Paths.temp_dir" title="Link to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
@@ -110,6 +182,28 @@ with underscores separating words.</p>
 <p class="rubric">Notes</p>
 <p>This method creates a temporary clone of a directory.</p>
 </dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-abraham_md.config.structures">
+<span id="abraham-md-config-structures-module"></span><h2>abraham_md.config.structures module<a class="headerlink" href="#module-abraham_md.config.structures" title="Link to this heading">¶</a></h2>
+<p>structures.py: Contains data structures for the application.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="abraham_md.config.structures.Structures">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">abraham_md.config.structures.</span></span><span class="sig-name descname"><span class="pre">Structures</span></span><a class="headerlink" href="#abraham_md.config.structures.Structures" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Data structures for the application.</p>
+<p class="rubric">Notes</p>
+<p>This class contains data structures used throughout the application.
+By storing data structures in a single location, it is easier to
+manage and update them. Data structures should be defined as class
+attributes and should be named in uppercase with underscores
+separating words.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abraham_md.config.structures.Structures.DIRECTORY_STRUCTURE_REGEX">
+<span class="sig-name descname"><span class="pre">DIRECTORY_STRUCTURE_REGEX</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{'handbook':</span> <span class="pre">'^Module</span> <span class="pre">Specification.pdf$',</span> <span class="pre">'lectures':</span> <span class="pre">'^\\d{1,2}.pdf$',</span> <span class="pre">'module':</span> <span class="pre">'^[A-Z]{3}\\d{4}</span> <span class="pre">[A-Za-z]+(?:\\s+[A-Za-z]+)*$',</span> <span class="pre">'papers':</span> <span class="pre">'^(202\\d{1}|MOCK\\d{1}).pdf$',</span> <span class="pre">'practicals':</span> <span class="pre">'^\\d+.pdf$',</span> <span class="pre">'tutorials':</span> <span class="pre">'^\\d+.pdf$'}</span></em><a class="headerlink" href="#abraham_md.config.structures.Structures.DIRECTORY_STRUCTURE_REGEX" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
 
 </dd></dl>
 
