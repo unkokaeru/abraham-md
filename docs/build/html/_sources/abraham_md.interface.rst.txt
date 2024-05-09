@@ -12,6 +12,14 @@ abraham\_md.interface.command\_line module
    :undoc-members:
    :show-inheritance:
 
+abraham\_md.interface.graphical module
+--------------------------------------
+
+.. automodule:: abraham_md.interface.graphical
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 Module contents
 ---------------
 

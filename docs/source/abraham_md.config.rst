@@ -12,10 +12,26 @@ abraham\_md.config.constants module
    :undoc-members:
    :show-inheritance:
 
+abraham\_md.config.dialogue module
+----------------------------------
+
+.. automodule:: abraham_md.config.dialogue
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 abraham\_md.config.paths module
 -------------------------------
 
 .. automodule:: abraham_md.config.paths
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+abraham\_md.config.structures module
+------------------------------------
+
+.. automodule:: abraham_md.config.structures
    :members:
    :undoc-members:
    :show-inheritance:
