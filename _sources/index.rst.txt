@@ -1,8 +1,8 @@
    Welcome to the Abraham_md's documentation!
    ================================================================
 
-.. image:: https://github.com/unkokaeru/abraham_md/actions/workflows/continuous_integration.yml/badge.svg
-    :target: https://github.com/unkokaeru/abraham_md/actions/workflows/continuous_integration.yml
+.. image:: https://github.com/unkokaeru/abraham-md/actions/workflows/continuous_integration.yml/badge.svg
+    :target: https://github.com/unkokaeru/abraham-md/actions/workflows/continuous_integration.yml
     :alt: Continuous Integration (CI) Tests
 
 Converts University of Lincoln module files into a useful Obsidian Vault for keeping notes throughout the academic year, as well as revising at the end of an academic year.
