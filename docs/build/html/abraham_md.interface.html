@@ -39,13 +39,37 @@
 <span id="abraham-md-interface-command-line-module"></span><h2>abraham_md.interface.command_line module<a class="headerlink" href="#module-abraham_md.interface.command_line" title="Link to this heading">¶</a></h2>
 <p>command_line.py: Command line interface for the application.</p>
 <dl class="py function">
-<dt class="sig sig-object py" id="abraham_md.interface.command_line.command_line_interface">
-<span class="sig-prename descclassname"><span class="pre">abraham_md.interface.command_line.</span></span><span class="sig-name descname"><span class="pre">command_line_interface</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#abraham_md.interface.command_line.command_line_interface" title="Link to this definition">¶</a></dt>
-<dd><p>Command line interface for the application.</p>
+<dt class="sig sig-object py" id="abraham_md.interface.command_line.fetch_input_path">
+<span class="sig-prename descclassname"><span class="pre">abraham_md.interface.command_line.</span></span><span class="sig-name descname"><span class="pre">fetch_input_path</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Path</span></span></span><a class="headerlink" href="#abraham_md.interface.command_line.fetch_input_path" title="Link to this definition">¶</a></dt>
+<dd><p>Fetch the input directory path from the user.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p><ul class="simple">
+<li><p><em>Path</em> – The input directory path.</p></li>
+<li><p><em>Exceptions</em></p></li>
+<li><p><em>———-</em></p></li>
+<li><p><em>FileNotFoundError</em> – Raised when the input path is invalid.</p></li>
+</ul>
+</p>
+</dd>
+</dl>
 <p class="rubric">Notes</p>
-<p>This function is the entry point for the command line interface.</p>
+<p>This function prompts the user to enter the input directory path.
+The input path is then validated to ensure it exists and contains
+the correct directory structure.</p>
 </dd></dl>
 
+<dl class="py function">
+<dt class="sig sig-object py" id="abraham_md.interface.command_line.intro_text">
+<span class="sig-prename descclassname"><span class="pre">abraham_md.interface.command_line.</span></span><span class="sig-name descname"><span class="pre">intro_text</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#abraham_md.interface.command_line.intro_text" title="Link to this definition">¶</a></dt>
+<dd><p>Display the introduction text for the application.</p>
+<p class="rubric">Notes</p>
+<p>This function displays the introduction text for the application.</p>
+</dd></dl>
+
+</section>
+<section id="abraham-md-interface-graphical-module">
+<h2>abraham_md.interface.graphical module<a class="headerlink" href="#abraham-md-interface-graphical-module" title="Link to this heading">¶</a></h2>
 </section>
 <section id="module-abraham_md.interface">
 <span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-abraham_md.interface" title="Link to this heading">¶</a></h2>

@@ -10,6 +10,8 @@ Subpackages
    abraham_md.config
    abraham_md.interface
    abraham_md.logs
+   abraham_md.processing
+   abraham_md.validation
 
 Submodules
 ----------
