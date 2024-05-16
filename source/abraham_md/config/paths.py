@@ -49,4 +49,4 @@ class Paths:
 
 
 # Clone the templates directory to a temporary directory if rendering templates
-# Paths.temporary_clone("abraham_md.templates")
+Paths.temporary_clone("abraham_md.templates")

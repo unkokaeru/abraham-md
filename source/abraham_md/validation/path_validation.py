@@ -31,14 +31,14 @@ def validate_directory_structure(path: Path) -> bool:
     and files are named correctly.
     """
     # check path is named after module
-    if not re.match(Structures.DIRECTORY_STRUCTURE_REGEX["module"], path.name):
+    if not re.match(Structures.INPUT_DIRECTORY_STRUCTURE_REGEX["module"], path.name):
         path_validation_logger.error(Dialogue.MISSING_DIRECTORY_ERROR.format("module"))
         return False
 
     # check sub-directories
     for sub_directory in path.iterdir():
         if sub_directory.is_dir():
-            if sub_directory.name not in Structures.DIRECTORY_STRUCTURE_REGEX.keys():
+            if sub_directory.name not in Structures.INPUT_DIRECTORY_STRUCTURE_REGEX.keys():
                 path_validation_logger.error(
                     Dialogue.DIRECTORY_NAMING_ERROR.format(sub_directory.name)
                 )
@@ -47,7 +47,7 @@ def validate_directory_structure(path: Path) -> bool:
             # check files in sub-directory
             for file in sub_directory.iterdir():
                 if not re.match(
-                    Structures.DIRECTORY_STRUCTURE_REGEX[sub_directory.name], file.name
+                    Structures.INPUT_DIRECTORY_STRUCTURE_REGEX[sub_directory.name], file.name
                 ):
                     path_validation_logger.error(Dialogue.MISSING_FILE_ERROR.format(file.name))
                     return False

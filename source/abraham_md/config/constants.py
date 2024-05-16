@@ -1,6 +1,6 @@
 """constants.py: Constants for the application."""
 
-from dotenv import load_dotenv
+from dotenv import load_dotenv  # TODO: Decide whether to use .env file or not
 from os import getenv
 
 
@@ -38,3 +38,15 @@ class Constants:
         "numbers_default_to_math": True,
         "enable_spell_check": True,
     }
+
+    # LLM constants
+    OPENAI_API_KEY = getenv("OPENAI_API_KEY")
+    FETCH_SYSTEM_PROMPT = (
+        "You are a program that fetches the {information} from the provided markdown. "
+        "Provide the information in the following format: '{information}: Information'."
+        "If you cannot find the information, return '{information}: None'."
+        "{additional_prompting}"
+    )
+
+    # File constants
+    TEMPLATE_EXTENSION = ".j2"

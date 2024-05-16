@@ -44,6 +44,10 @@ MTH1003 Ideas of Mathematical Proof
     EXIT_TEXT = "Exiting Abraham..."
     SETUP_TEXT = """Please enter the input directory path:"""
 
+    # Input messages
+    INPUT_PATH_TEXT = "Please enter the input directory path:"
+    OUTPUT_PATH_TEXT = "Please enter the output directory path:"
+
     # Validation messages
     VALID_PATH_MESSAGE = "Valid path."
 

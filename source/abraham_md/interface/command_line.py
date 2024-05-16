@@ -41,7 +41,7 @@ def fetch_input_path() -> Path:
     the correct directory structure.
     """
     cli_interface_logger.info(Dialogue.SETUP_TEXT)
-    cli_interface_logger.info("Please enter the input directory path:")
+    cli_interface_logger.info(Dialogue.INPUT_PATH_TEXT)
     input_directory = input()
 
     try:
@@ -55,3 +55,21 @@ def fetch_input_path() -> Path:
     except FileNotFoundError:
         cli_interface_logger.error(Dialogue.INVALID_PATH_ERROR)
         return fetch_input_path()
+
+
+def fetch_output_path() -> Path:
+    """
+    Fetch the output directory path from the user.
+
+    Returns
+    -------
+    Path
+        The output directory path.
+
+    Notes
+    -----
+    This function prompts the user to enter the output directory path.
+    """
+    cli_interface_logger.info(Dialogue.OUTPUT_PATH_TEXT)
+    output_directory = input()
+    return Path(output_directory)

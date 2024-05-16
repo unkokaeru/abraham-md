@@ -58,7 +58,7 @@ def process_files(process_function: Callable, file_list: list[Path]) -> None:
     file_conversion_logger.info("All files have been processed.")
 
 
-def list_files(directory: Path, file_extension: str) -> list[Path]:
+def list_files(directory: Path, file_extension: str) -> list[tuple[Path, str]]:
     """
     List all files in a directory with a specific file extension.
 
@@ -71,8 +71,8 @@ def list_files(directory: Path, file_extension: str) -> list[Path]:
 
     Returns
     -------
-    list[Path]
-        A list of paths to the files in the directory with the specified file extension.
+    list[tuple[Path, str]]
+        A list of tuples containing the file path and filename.
 
     Raises
     ------
@@ -86,13 +86,13 @@ def list_files(directory: Path, file_extension: str) -> list[Path]:
     if not os.path.isdir(directory):
         raise NotADirectoryError(f"{directory} is not a directory.")
 
-    file_list: list[Path] = []
+    file_list: list[tuple[Path, str]] = []
 
     for dirpath, _, filenames in os.walk(directory):
         for filename in filenames:
             file_path = Path(dirpath) / filename
             if file_path.suffix == file_extension:
-                file_list.append(file_path)
+                file_list.append((file_path, filename))
 
     return file_list
 
