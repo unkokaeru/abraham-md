@@ -17,7 +17,6 @@ module_logic_logger = setup_logging()
 
 def generate_module() -> Module:
     """Generate the module."""
-
     # Create the module object
     module = Module(
         Coordinator(
