@@ -4,7 +4,7 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.poetry]
 name = "abraham_md"
-version = "0.1.1"
+version = "0.2.0"
 description = "Converts University of Lincoln module files into a useful Obsidian Vault for keeping notes throughout the academic year, as well as revising at the end of an academic year."
 authors = ["W. Fayers <wills@fayers.com>"]
 license = "MIT"
