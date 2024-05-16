@@ -8,6 +8,7 @@ Subpackages
    :maxdepth: 4
 
    abraham_md.config
+   abraham_md.generation
    abraham_md.interface
    abraham_md.logs
    abraham_md.processing
