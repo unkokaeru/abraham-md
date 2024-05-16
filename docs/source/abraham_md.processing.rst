@@ -1,6 +1,17 @@
 abraham\_md.processing package
 ==============================
 
+Submodules
+----------
+
+abraham\_md.processing.file\_conversion module
+----------------------------------------------
+
+.. automodule:: abraham_md.processing.file_conversion
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 Module contents
 ---------------
 
