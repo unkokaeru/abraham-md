@@ -12,6 +12,22 @@ abraham\_md.processing.file\_conversion module
    :undoc-members:
    :show-inheritance:
 
+abraham\_md.processing.file\_interaction module
+-----------------------------------------------
+
+.. automodule:: abraham_md.processing.file_interaction
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+abraham\_md.processing.llm\_integration module
+----------------------------------------------
+
+.. automodule:: abraham_md.processing.llm_integration
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 Module contents
 ---------------
 

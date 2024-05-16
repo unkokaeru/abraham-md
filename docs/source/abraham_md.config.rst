@@ -36,6 +36,14 @@ abraham\_md.config.structures module
    :undoc-members:
    :show-inheritance:
 
+abraham\_md.config.type\_annotations module
+-------------------------------------------
+
+.. automodule:: abraham_md.config.type_annotations
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 Module contents
 ---------------
 
