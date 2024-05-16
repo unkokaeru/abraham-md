@@ -1,7 +1,8 @@
 """constants.py: Constants for the application."""
 
-from dotenv import load_dotenv  # TODO: Decide whether to use .env file or not
 from os import getenv
+
+from dotenv import load_dotenv  # TODO: Decide whether to use .env file or not
 
 
 class Constants:
